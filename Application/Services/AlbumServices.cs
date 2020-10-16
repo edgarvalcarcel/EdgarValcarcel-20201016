@@ -19,7 +19,7 @@ namespace Application.Services
         { 
             var _albumsResult = _albumRepository.GetAllAlbums();
             List<AlbumVM> Albums = _albumsResult.Select(a => new AlbumVM() { id = a.Id, title = a.Title }).ToList();
-            return Albums; 
+            return Albums;
         }
     }
 }

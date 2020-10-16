@@ -8,6 +8,6 @@ namespace Infrastructure.Data.Persistance
     {
         public string Albums { get; set; }
         public string Photos { get; set; }
-        public string Comments { get; set; } 
+        public string Comments { get; set; }
     }
 }

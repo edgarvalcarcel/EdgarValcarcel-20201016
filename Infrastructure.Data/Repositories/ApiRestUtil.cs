@@ -20,7 +20,7 @@ namespace Infrastructure.Data.Repositories
             var response = client.Execute(request);
 
             JsonDeserializer jsonDeserializer = new JsonDeserializer();
-            return jsonDeserializer.Deserialize<T>(response);  
+            return jsonDeserializer.Deserialize<T>(response);
          }
     }
 }

@@ -19,7 +19,7 @@ namespace Application.Services
         { 
             var _photosResult = _photoRepository.GetPhotos(AlbumId);
             List<PhotoVM> Photos = _photosResult.Select(a => new PhotoVM() { id = a.Id, title = a.Title , url = a.Url, thumbnailUrl = a.ThumbnailUrl}).ToList();
-            return Photos; 
+            return Photos;
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Repositories
         private AlbumAPIConfig _albumURL;
         public AlbumRepository(IOptions<AlbumAPIConfig> _config)
         { 
-            _albumURL = _config.Value; 
+            _albumURL = _config.Value;
         }
         public List<Album> GetAllAlbums()
         { 

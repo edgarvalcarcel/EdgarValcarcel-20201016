@@ -7,6 +7,6 @@ namespace Domain.Interfaces
 {
     public interface IPhotoRepository
     {
-        List<Photo> GetPhotos(int AlbumId); 
+        List<Photo> GetPhotos(int AlbumId);
     }
 }

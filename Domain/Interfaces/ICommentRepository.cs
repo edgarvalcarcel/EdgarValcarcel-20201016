@@ -7,6 +7,6 @@ namespace Domain.Interfaces
 {
     public interface ICommentRepository
     {
-        List<Comment> GetCommentByPhoto(int photoId); 
+        List<Comment> GetCommentByPhoto(int photoId);
     }
 }

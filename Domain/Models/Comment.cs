@@ -12,6 +12,6 @@ namespace Domain.Models
         [JsonPropertyName("email")] public string Email { get; set; }
         [JsonPropertyName("body")] public string Body { get; set; }
         [JsonPropertyName("postId")] public int PostId { get; set; } 
-        public virtual Photo Photo { get; set; } 
+        public virtual Photo Photo { get; set; }
     }
 }

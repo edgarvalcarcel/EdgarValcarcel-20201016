@@ -14,7 +14,7 @@ namespace Application.Common
             var request = new RestRequest(resource, Method.GET);
             var response = client.Execute(request);
             JsonDeserializer jsonDeserializer = new JsonDeserializer();
-            return jsonDeserializer.Deserialize<T>(response);
+            return jsonDeserializer.Deserialize<T>(response); 
         }
     }
 }

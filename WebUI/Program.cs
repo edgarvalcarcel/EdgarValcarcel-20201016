@@ -15,6 +15,5 @@ namespace MVC
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-
     }
 }

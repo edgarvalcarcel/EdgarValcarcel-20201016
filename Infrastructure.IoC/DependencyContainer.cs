@@ -19,7 +19,7 @@ namespace Infrastructure.IoC
             //*-------------------------------------------------------*
             services.AddScoped<IAlbumRepository, AlbumRepository>();
             services.AddScoped<IPhotoRepository, PhotoRepository>();
-            services.AddScoped<ICommentRepository, CommentRepository>();  
+            services.AddScoped<ICommentRepository, CommentRepository>();
         }
     }
 }

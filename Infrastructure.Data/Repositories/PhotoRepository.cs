@@ -18,7 +18,7 @@ namespace Infrastructure.Data.Repositories
 
         public PhotoRepository(IOptions<AlbumAPIConfig> _config)
         {
-            _photoURL = _config.Value; 
+            _photoURL = _config.Value;
         }
 
         public List<Photo> GetPhotos(int albumId)

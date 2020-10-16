@@ -7,6 +7,6 @@ namespace Application.Interfaces
 {
     public interface IPhotoServices
     {
-        List<PhotoVM> GetPhotos(int AlbumId); 
+        List<PhotoVM> GetPhotos(int AlbumId);
     }
 }

@@ -13,6 +13,6 @@ namespace Domain.Models
         [JsonPropertyName("thumbnailUrl")] public string ThumbnailUrl { get; set; }
         [JsonPropertyName("albumID")] public int AlbumID { get; set; }
         public virtual Album Album { get; set; }
-        public virtual ICollection<Comment> Comments { get; set; }  
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }

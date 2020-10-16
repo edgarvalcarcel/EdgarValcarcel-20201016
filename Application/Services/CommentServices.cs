@@ -19,7 +19,7 @@ namespace Application.Services
         {
             var _commentsResult = _commentRepository.GetCommentByPhoto(photoId);
             List<CommentVM> comments = _commentsResult.Select(a => new CommentVM() { id = a.Id, postId=a.PostId, name=a.Name, email=a.Email, body = a.Body}).ToList();
-            return comments; 
+            return comments;
         }
     }
 }

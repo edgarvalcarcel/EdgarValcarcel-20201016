@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Repositories
         private AlbumAPIConfig _commentURL;
         public CommentRepository(IOptions<AlbumAPIConfig> _config)
         {
-            _commentURL = _config.Value; 
+            _commentURL = _config.Value;
         }
         public List<Comment> GetCommentByPhoto(int photoId)
         {

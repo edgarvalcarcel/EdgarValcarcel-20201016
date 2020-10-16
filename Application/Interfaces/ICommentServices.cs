@@ -7,6 +7,6 @@ namespace Application.Interfaces
 {
     public interface ICommentServices
     {
-        List<CommentVM> GetComments(int photoId); 
+        List<CommentVM> GetComments(int photoId);  
     }
 }

@@ -7,6 +7,6 @@ namespace Application.Interfaces
 {
     public interface IAlbumServices
     {
-        List<AlbumVM> GetAlbums(); 
+        List<AlbumVM> GetAlbums();  
     }
 }

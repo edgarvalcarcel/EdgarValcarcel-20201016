@@ -10,6 +10,6 @@ namespace Domain.Models
     {
         [JsonPropertyName("id")] public int Id { get; set; }
         [JsonPropertyName("title")] public string Title { get; set; }
-        [JsonPropertyName("photos")] public virtual ICollection<Photo> Photos { get; set; }
+        [JsonPropertyName("photos")] public virtual ICollection<Photo> Photos { get; set; } 
     }
 }
