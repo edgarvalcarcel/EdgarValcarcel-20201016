@@ -1,0 +1,42 @@
+﻿@model List<Application.ViewModels.PhotoVM>
+@{ Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Bertoni Albums";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-8 col-lg-12">
+            <h6 class="text-muted">Photos album </h6>
+            <ul class="list-group">
+                @foreach (var photo in Model)
+                {
+                <li class="list-group-item d-flex justify-content-between align-items-baseline">
+
+                    @photo.title.Trim()
+                    <div class="image-parent">
+                        <img src=@photo.thumbnailUrl class="img-fluid">
+                    </div>
+                    <a asp-action="GetCommentsbyPhoto" asp-route-id="@photo.id">Comments</a>
+                </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('.editModal').modal();
+    });
+
+    function getcomments(id) {
+        $.ajax({
+            url: '/GetCommentsbyPhoto/' + id, // The method name + paramater
+            success: function (data) {
+                $('#modalWrapper').html(data); // This should be an empty div where you can inject your new html (the partial view)
+            }
+        });
+    }
+</script>

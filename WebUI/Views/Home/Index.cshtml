@@ -1,0 +1,26 @@
+﻿@model List<Application.ViewModels.AlbumVM>
+@{ Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Bertoni Albums";
+}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<h2>Albums</h2>
+<table id="albumTable" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+        <tr class="">
+            <th>#</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var album in Model)
+        {
+            <tr style="height: 60px;">
+                <td>@album.title</td>
+                <td>
+                    <a id="btnphotos" asp-action="GetPhotos" asp-route-id="@album.id">Photos</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

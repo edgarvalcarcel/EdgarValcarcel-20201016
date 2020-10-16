@@ -1,0 +1,14 @@
+﻿.esh-app-footer {
+  background-color: #7a7a7a;
+  border-top: 1px solid #EEEEEE;
+  margin-top: 2.5rem;
+  width: 100%;
+  bottom: 0; }
+  .esh-app-footer-brand {
+    height: 50px;
+    width: 230px; }
+.esh-app-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between; }

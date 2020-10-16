@@ -1,0 +1,25 @@
+@import './_variables.scss';
+
+.esh-app {
+    &-footer {
+        $margin: 2.5rem;
+        $padding: 2.5rem;
+        background-color: $color-background-darker;
+        border-top: $border-light solid $color-foreground-bright;
+        margin-top: $margin;
+        width: 100%;
+        bottom: 0;
+        $height: 50px;
+
+        &-brand {
+            height: $height;
+            width: 230px;
+        }
+    }
+    &-wrapper {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between
+    }
+}
